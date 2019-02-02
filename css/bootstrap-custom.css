@@ -7,7 +7,51 @@ body
 	background-color: #1F1F1F;
 }
 
+br
+{
+	
+}
+
 .jumbotron
 {
-	background-color: #484848
+	background-color: #484848;
+	border-radius: 0%;
+}
+
+.parallax
+{
+	/*Image Banner*/
+	background-image: url("../images/mainPage/ForsakenBastion_4K_HighSample.png");	
+    height: 100%;
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner
+{
+	/*Image Banner*/
+	background-image: url("../images/mainPage/ForsakenBastion_4K_HighSample.png");	
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-bodyColor
+{
+	background-color: #1F1F1F;
+}
+
+.bg-peak
+{
+	background-image: url("../images/PEAK/peakBKG.png")
+}
+
+.center
+{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
 }

@@ -21,7 +21,6 @@ br
 .parallax
 {
 	/*Image Banner*/
-	background-image: url("../images/mainPage/ForsakenBastion_4K_HighSample.png");	
     height: 100%;
 	background-attachment: fixed;
     background-position: center;
@@ -32,7 +31,6 @@ br
 .banner
 {
 	/*Image Banner*/
-	background-image: url("../images/mainPage/ForsakenBastion_4K_HighSample.png");	
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -42,11 +40,6 @@ br
 .bg-bodyColor
 {
 	background-color: #1F1F1F;
-}
-
-.bg-peak
-{
-	background-image: url("../images/PEAK/peakBKG.jpg")
 }
 
 .center

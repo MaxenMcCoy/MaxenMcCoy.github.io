@@ -3,3 +3,21 @@ Modal: https://getbootstrap.com/docs/4.0/components/modal/
 
 W3Modal: https://www.w3schools.com/howto/howto_css_modal_images.asp
 W3Lightbox: https://www.w3schools.com/howto/howto_js_lightbox.asp
+
+------------------------------
+
+PLAN:
+Main Page
+{
+	Cool screenies carousel
+	Portfolio - General
+	Portfolio - Specific variants per role
+
+	Resume
+
+	About (bio, current projects)
+
+	Contact (twitter, email)
+}
+
+Reference Jason Mojica's website for a good example.

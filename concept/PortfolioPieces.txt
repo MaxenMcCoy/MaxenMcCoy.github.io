@@ -1,0 +1,28 @@
+[The "yes I want to show these" projects]
+ -- Emerald Sanctum --
+{
+	This project is fairly well rounded out as a project for me, one of the most in terms of what I currently have in my portfolio. It has a beginning, middle, and end. I coded and and did the art for all of it myself, and I'm still rather proud of how it turned out. The only thing that stands between me and releasing it in some capacity is finishing it off with some sound work.
+}
+ -- Space Pizza --
+{
+	I consider this project to be my most polished game I've made to date. It's fun, has replayability, looks nice, and even has audio.
+}
+ -- PEAK --
+{
+	I really enjoy the way this project looks. I didn't contribute a lot to the visual of this project, but I did almost all the programming for it. Having this in here gives me a chance to discuss what I value in games and collaborative projects.
+}
+ -- Multiplayer Zombies Game --
+{
+	This project illustrates two important things. One, that I can work on a multiplayer, networked game; and two, that I can learn and work with a new and difficult system, and get it to work how I need it to.
+}
+ -- AG231 Final Project - Sci-fi Stealth VR Game --
+{
+	This projects shows that I can work with VR, and that I have at least a basic understanding of how to structure and create AI for games.
+}
+
+[The "probably won't use but want to keep in mind in case maybe I do" projects]
+ -- The M[eye]ne
+ -- Run Mailboy, Run
+ -- Cursed Crown
+ -- Swooshball
+ -- Daydream/GearVR Walking Sim

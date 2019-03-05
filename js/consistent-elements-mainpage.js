@@ -1,8 +1,4 @@
 $(function() {
-	$("#navbar").load("resources/navbar.html");
+	$("#navbar").load("resources/navbar-main.html");
 	$("#footer").load("resources/footer.html");
-	
-	$(function() {
-		$("#navbar-name").remove();
-	});
 });

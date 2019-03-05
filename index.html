@@ -92,27 +92,7 @@
       </div>
     </section>
     <hr>
-    <footer class="text-center footer">
-		<div class="row">
-			<div class="col-12">
-				<p>Copyright © Maxen McCoy. All rights reserved.</p>
-			</div>
-		</div>
-      <div class="row bg-dark">
-        <div class="col-md-3 col-xs-12">
-          <p>Maxen McCoy</p>
-        </div>
-        <div class="col-md-3 col-xs-6">
-          <a href="https://twitter.com/Fornan_II">twitter: @Fornan_II</a>
-        </div>
-        <div class="col-md-3 col-xs-6">
-          <p>email: maxcoy97@gmail.com</p>
-        </div>
-        <div class="col-md-3 col-xs-12">
-          <a href="#Resume">Resume</a>
-        </div>
-      </div>
-    </footer>
+    <div id="footer"></div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="js/jquery-3.3.1.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
@@ -120,5 +100,11 @@
     <script src="js/bootstrap-4.2.1.js"></script>
 	
 	<script src="js/consistent-elements.js"></script>
+	<script>
+		$(function()
+		{
+			$("#navbar-name").html = "";
+		});
+	</script>
   </body>
 </html>

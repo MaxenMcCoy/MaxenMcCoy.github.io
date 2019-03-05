@@ -73,6 +73,17 @@ body
     max-width: 100%;
     max-height: auto;
     width: 100%;
-    height: 56.25%;
-    
+    height: 56.25%;   
+}
+
+.portfolio-banner
+{
+	height:100px;
+	padding:0%;
+}
+
+.portfolio-banner > img
+{
+	max-height:100%;
+	height:auto;
 }

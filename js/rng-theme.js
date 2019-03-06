@@ -1,6 +1,6 @@
 var themes = [
     {image: "images/PEAK/peakBKG.jpg", color: "#ffbafd"},
-    {image: "images/spacePizza/space-pizza-bkg.jpg", color: "#bc3535"}]
+    {image: "images/spacePizza/space-pizza-bkg.jpg", color: "#dbaf42"}]
 
 $(function() {
     var index = Math.floor(Math.random() * themes.length);

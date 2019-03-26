@@ -69,16 +69,13 @@ body
 
 .carousel-inner > .carousel-item
 {
-    
     overflow: hidden;
 }
 
 .yt-embed
 {
-    max-width: 100%;
-    max-height: auto;
     width: 100%;
-    height: 56.25%;   
+    height: auto;
 }
 
 .portfolio-banner

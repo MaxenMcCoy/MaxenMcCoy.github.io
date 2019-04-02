@@ -37,6 +37,11 @@ body
 	background-color: #1F1F1F;
 }
 
+.text-bodyColor
+{
+	color: #D2D4D4;
+}
+
 .bg-card
 {
     background-color: #484848;

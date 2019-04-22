@@ -59,11 +59,6 @@ body
     margin-right: auto;
 }
 
-.h-100
-{
-	height: 100%;
-}
-
 /*Carousel Modifications*/
 .carousel-inner
 {
@@ -105,4 +100,21 @@ body
 .square-corners
 {
 	border-radius: 0;
+}
+
+.footer-item
+{
+	display: block;
+	padding: 0.5rem 1rem;
+	color: #fff
+}
+
+.footer-link
+{
+	text-decoration: none;
+	color: rgba(255, 255, 255, 0.5);
+}
+
+.footer-link:hover, .footer-link:focus {
+  color: rgba(255, 255, 255, 0.75);
 }

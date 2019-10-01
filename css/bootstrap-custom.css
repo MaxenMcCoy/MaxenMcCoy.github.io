@@ -62,7 +62,7 @@ body
 /*Carousel Modifications*/
 .carousel-inner
 {
-    max-height: 90vh;
+    max-height: 75vh;
     height: 56.25vw;
     width: 100%;
 }

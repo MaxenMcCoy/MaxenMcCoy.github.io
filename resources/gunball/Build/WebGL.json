@@ -1,6 +1,6 @@
 {
-"companyName": "DefaultCompany",
-"productName": "GameProductionCoolGame01",
+"companyName": "GameProductionCoolGames",
+"productName": "Gunball",
 "productVersion": "0.1",
 "dataUrl": "WebGL.data.unityweb",
 "wasmCodeUrl": "WebGL.wasm.code.unityweb",

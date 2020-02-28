@@ -10,10 +10,10 @@
     <link href="css/bootstrap-4.2.1.css" rel="stylesheet">
 	<link href="css/bootstrap-custom.css" rel="stylesheet">
   </head>
-  <body>
+  <body style="height: 90vh">
     <div id="navbar"></div>
     <section>
-      <div class="jumbotron text-center mt-2 mb-2 banner bg-dark" style="padding: 1em">
+      <div class="jumbotron text-center mt-2 mb-0 banner bg-dark" style="padding: 1em">
         <div class="container">
           <div class="row">
             <div class="col-12">
@@ -23,84 +23,33 @@
         </div>
       </div>
     </section>
-    <section class="container-fluid">
-      <div class="row">
-        <div class="col-12 text-center p-0">
-			<div id="carouselMain" class="banner carousel slide" data-ride="carousel">
-			  <ol class="carousel-indicators">
-				<li data-target="#carouselMain" data-slide-to="0" class="active"></li>
-				<li data-target="#carouselMain" data-slide-to="1"></li>
-				<li data-target="#carouselMain" data-slide-to="2"></li>
-				<li data-target="#carouselMain" data-slide-to="3"></li>
-				<li data-target="#carouselMain" data-slide-to="4"></li>
-			  </ol>
-			  <div class="carousel-inner">
-				<div class="carousel-item active">
-				  <a href="peak.html">
-					<img class="d-block w-100 img-fluid" src="images/carousel/peak.png" alt="Slide 1">
-				  </a>
-				</div>
-				<div class="carousel-item">
-					<a href="space-pizza.html">
-					  <img class="d-block w-100 img-fluid" src="images/carousel/space-pizza.png" alt="Slide 2">
-					</a>
-				</div>
-				<div class="carousel-item">
-					<a href="multiplayer-zombies.html">
-						<img class="d-block w-100 img-fluid" src="images/carousel/multiplayer-zombies.png" alt="Slide 3">
-					</a>
-				</div>
-				<div class="carousel-item">
-					<a href="appetent-synapse.html">
-						<img class="d-block w-100 img-fluid" src="images/appSynap/background.jpg" alt="Slide 4">
-					</a>
-				</div>
-				<div class="carousel-item">
-					<a href="emerald-sanctum.html">
-						<img class="d-block w-100 img-fluid" src="images/carousel/emerald-sanctum.png" alt="Slide 5">
-					</a>
-				</div>
-			  </div>
-			  <a class="carousel-control-prev" href="#carouselMain" role="button" data-slide="prev">
-				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-				<span class="sr-only">Previous</span>
-			  </a>
-			  <a class="carousel-control-next" href="#carouselMain" role="button" data-slide="next">
-				<span class="carousel-control-next-icon" aria-hidden="true"></span>
-				<span class="sr-only">Next</span>
-			  </a>
-			</div>
-        </div>
-      </div>
-    </section>
-	<br>
-    <section>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 col-12">
-            <div class="card bg-card" style="height:100%">
-				<div class="card-header"><h2>Portfolio</h2></div>
-				<div class="card-body">
-					
-				</div>
-				<div class="card-footer">
-					<a href="portfolio.html" class="btn btn-dark align-left">View Portfolio</a>
-				</div>
-            </div>
-          </div>
-          <div class="col-md-6 col-12 mt-md-0 mt-3">
-            <div class="card bg-card" style="height:100%">
-					<div class="card-header"><h2>About</h2></div>
-					<div class="card-body">
-						<p>Hey, I'm Maxen McCoy, a games programmer and designer from New Hampshire. I'm always excited to work on creative projects...</p>
+    <section class="parallax rngThemeBkg bg-darken">
+	  <table class="h-75 container">
+		  <tr>
+			  <td class="align-middle">
+				  <div class="info-box rngTheme-color p-4">
+					<div class="row">
+						<div class="col-12 text-center text-white">
+							<h5>Hey, I'm Maxen McCoy, a games programmer and designer from New Hampshire!</h5>
+						</div>
 					</div>
-					<div class="card-footer">
-						<a href="aboutme.html#About" class="btn btn-dark align-left">Read more</a>
+					<div class="row mt-3 mb-3">
+						<div class="col-6 text-right">
+							<a href="aboutme.html" class="btn btn-dark w-100 h-100 align-middle" style="max-width: 13em"><div class="w-100 h-100" style="display: flex; align-items: center; justify-content: center;">More About Me</div></a>
+						</div>
+						<div class="col-6 text-left">
+							<a href="resources/MaxenMcCoyResume.pdf" class="btn btn-dark w-100 h-100" style="max-width: 13em;"><div class="w-100 h-100" style="display: flex; align-items: center; justify-content: center;">Resume</div></a>
+						</div>
 					</div>
-            </div>
-          </div>
-        </div>
-      </div>
+					<div class="row">
+						<div class="col-12 text-center">
+							<a href="portfolio.html" class="btn btn-dark w-100 h-100" style="max-width: 28em;"><div class="w-100 h-100" style="display: flex; align-items: center; justify-content: center;">View Portfolio</div></a>
+						</div>
+					</div>
+				  </div>
+			  </td>
+		  </tr>
+	  </table>
     </section>
     <hr>
     <div id="footer"></div>
@@ -111,5 +60,6 @@
     <script src="js/bootstrap-4.2.1.js"></script>
 	
 	<script src="js/consistent-elements-mainpage.js"></script>
+	<script src="js/rng-theme.js"></script>
   </body>
 </html>

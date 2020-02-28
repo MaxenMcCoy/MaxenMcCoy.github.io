@@ -3,13 +3,14 @@
 
 body
 {
-	color: #D2D4D4;
+	/* color: #D2D4D4; */
+	color: white;
 	background-color: #1F1F1F;
 }
 
 .jumbotron
 {
-	background-color: #484848;
+	background-color: rgba(0,0,0,0);
 	border-radius: 0%;
 }
 
@@ -23,6 +24,12 @@ body
     background-size: cover;
 }
 
+.bg-darken
+{
+	background-color: rgba(0,0,0,0.5);
+	background-blend-mode: multiply;
+}
+
 .banner
 {
 	/*Image Banner*/
@@ -32,6 +39,13 @@ body
     background-size: cover;
 }
 
+.info-box
+{
+	background-color: rgba(0,0,0,0.6);
+	border-top: 1px solid white;
+	border-bottom: 1px solid white;
+}
+
 .bg-bodyColor
 {
 	background-color: #1F1F1F;
@@ -39,7 +53,8 @@ body
 
 .text-bodyColor
 {
-	color: #D2D4D4;
+	/* color: #D2D4D4; */
+	color: white;
 }
 
 .bg-card

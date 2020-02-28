@@ -3,12 +3,19 @@ New Portfolio Pieces:
 Games (current setup)
 [y]Golorth Eats The World (Jam 1st) (PAX2020)
 [y]Gunball (PAX 2020)
-
-[n]Pixel Pulse
-
 [ ]Neighboohood
-[ ]PEAK
 [ ]Space Pizza
+[ ]PEAK
+
+Themes:
+-Delugional
+-PEAK
+-Emerald Sanctum
+-Untitle Multiplayer Project
+-Signals in Dust
+-Golorth Eats the World
+-Gunball
+-Neighboohood
 
 Systems
 Multiplayer - [ ]Untitled Multiplayer Project
@@ -19,6 +26,9 @@ Level Design
 [ ]Delugeional (Jam 1st)
 [ ]PEAK
 [n]Emerald Sanctum
+
+Close but no reason to put in portfolio:
+[n]Pixel Pulse
 
 THINGS THAT ARE TRICKY TO GET FOOTAGE OF:
 Neighboohood

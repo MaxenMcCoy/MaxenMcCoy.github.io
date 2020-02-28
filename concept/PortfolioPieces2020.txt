@@ -1,0 +1,19 @@
+New Portfolio Pieces:
+
+Games (current setup)
+[y]Golorth Eats The World (Jam 1st) (PAX2020)
+[y]Gunball (PAX 2020)
+[n]Pixel Pulse
+
+[ ]Delugeional (Jam 1st) (Remove once level design section)
+[?]Space Pizza
+
+Systems
+Multiplayer - [ ]Untitled Multiplayer Project
+Behavior Trees - [y]Appetent Synapse
+Vehicles/Pawn Control - [ ]Prototypes
+
+Level Design
+[ ]Delugeional (Jam 1st)
+[ ]PEAK
+[n]Emerald Sanctum

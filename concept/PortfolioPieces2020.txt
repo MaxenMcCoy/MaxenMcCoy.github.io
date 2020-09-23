@@ -1,31 +1,34 @@
 New Portfolio Pieces:
 
 Games (current setup)
-[y]Golorth Eats The World (Jam 1st) (PAX2020)
+[y]Golorth Eats The World (Jam 1st) (PAX2020) (Note: perms are tricky and effort)
 [y]Gunball (PAX 2020)
 [ ]Neighboohood
 [ ]Space Pizza
 [ ]PEAK
 
-Themes:
+Background themes:
 -Delugional
 -PEAK
 -Emerald Sanctum
--Untitle Multiplayer Project
+-Untitled Multiplayer Project
 -Signals in Dust
 -Golorth Eats the World
 -Gunball
 -Neighboohood
+-GameOnAPlanet
 
 Systems
 Multiplayer - [ ]Untitled Multiplayer Project
 Behavior Trees - [y]Appetent Synapse
 Vehicles/Pawn Control - [ ]Prototypes
+Computer/Scanning/Everything from prototypes - [ ]GameOnAPlanet
 
 Level Design
+[ ]GameOnAPlanet
 [ ]Delugeional (Jam 1st)
 [ ]PEAK
-[n]Emerald Sanctum
+[ ]Emerald Sanctum
 
 Close but no reason to put in portfolio:
 [n]Pixel Pulse

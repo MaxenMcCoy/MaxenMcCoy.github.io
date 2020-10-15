@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Maxen McCoy</title>
+	<link rel="icon" href="images/F2_Logo_27x27.png">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap-4.2.1.css" rel="stylesheet">
+	<link href="css/bootstrap-custom.css" rel="stylesheet">
+  </head>
+  <body class="rngThemeBkg parallax bg-darken">
+    <div id="navbar"></div>
+    <section>
+		<div class="container info-box rngTheme-color mt-4">
+			<div class="row bg-bodyColor text-bodyColor p-4 pt-3 pb-0">
+				<div class="col">
+					<h1>Triplanar Mapping</h1>
+					<hr class="rngTheme-color">
+					For regularly UV mapped models, your UV map is a pre-made map of 2D coordinates used to directly sample
+					a texture. In triplanar mapping a 3D coordinate is converted using maths into that 2D coordinate.
+					<br><br>
+					<p>I will be demonstrating this using Unity and Shadergraph (in URP). Shadergraph has a built-in
+					triplanar node which makes things nice and easy. All the principles here should apply to most rendering
+					setups, but other softwares may not have a built-in node available. If that's the case, you'll need
+					to implement your own triplanar mapping. Fortunately, there are plenty of good resources out there
+					on how to that!
+					</p>
+				</div>
+			</div>
+			<div class="row text-bodyColor pt-3 pb-3 align-items-end">
+				<div class="col-sm-6">
+					<p class="pt-3 px-4">Here's a model of a boat (with a little imagination). As you can see, the UV mapping looks pretty bad
+					and I'm just trying to give it a simple wood tiling texture.</p>
+					<div class="text-center">
+						<img class="img-fluid text-center" src="images/breakdowns/triplanar/img01.png" style="max-height: 350px"/>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<p class="pt-3 px-4">This is using this shader set up, which is more or less how most default materials are going to be set
+					up (albeit this one is simplified to just be albedo).</p>
+					<div class="text-center">
+						<img class="img-fluid" src="images/breakdowns/triplanar/img02.png" style="max-height: 350px"/>
+					</div>
+				</div>
+			</div>
+			<div class="row bg-bodyColor text-bodyColor">
+				<div class="col pt-3 px-4">
+					<p>Getting triplanar mapping set up is as simple as swapping out the SampleTexture2D node out with a Triplanar node. Note I've
+					also added an exposed tiling property to have a bit more control over the triplanar mapping.</p>
+				</div>
+			</div>
+			<div class="row pt-3 pb-3">
+				<div class="col-sm-6 text-center">
+					<img class="img-fluid" src="images/breakdowns/triplanar/img04.png" style="max-height: 350px"/>
+				</div>
+				<div class="col-sm-6 text-center">
+					<img class="img-fluid" src="images/breakdowns/triplanar/img03.png" style="max-height: 350px"/>
+				</div>
+			</div>
+			<div class="row bg-bodyColor text-bodyColor">
+				<div class="col pt-3 px-4">
+					<p>As you can see, the texture now seamlessly tiles across the whole model, regardless of the bad UVs. You can call your shader
+					done there if you want, but you can also go and add triplanar mapping for whatever other master node inputs you want. Here I've
+					hooked up the normal and smoothness inputs.</p>
+				</div>
+			</div>
+			<div class="row pt-3 pb-3">
+				<div class="col-sm-6 text-center">
+					<img class="img-fluid" src="images/breakdowns/triplanar/img06.png" style="max-height: 350px"/>
+				</div>
+				<div class="col-sm-6 text-center">
+					<img class="img-fluid" src="images/breakdowns/triplanar/img05.png" style="max-height: 350px"/>
+				</div>
+			</div>
+			<div class="row text-bodyColor">
+				<div class="col-sm-8 pt-3 pl-sm-4 pr-sm-2 px-4 bg-bodyColor">
+					<p>An important thing to note with Shadergraph's triplanar node is that by default it does NOT work with normal maps. To make
+					it work, you'll have to set the Type parameter on the triplanar node to Normal. This is because the data of a normal texture
+					is represented in a different style from most other textures (direction vectors vs a set of linear values), and a slightly
+					different algorithm is get the result.</p>
+				</div>
+				<div class="col-sm-4 pl-sm-2 pt-2 pt-sm-0 p-0">
+					<img class="img-fluid" src="images/breakdowns/triplanar/img07.png"/>
+				</div>
+			</div>
+			<div class="row bg-bodyColor text-bodyColor mt-2">
+				<div class="col pt-3 px-4">
+					<p>And that's it! Seamlessly tiling PBR materials without any UV mapping. If you're making anything static such as something for
+					an environment, you can stop here. But if you're trying to use this material on a moving object… well…</p>
+				</div>
+			</div>
+			<div class="row pt-3 pb-3">
+				<div class="col text-center">
+					<img class="img-fluid" src="images/breakdowns/triplanar/worldSpace.gif" style="max-height: 350px"/>
+				</div>
+			</div>
+			<div class="row bg-bodyColor text-bodyColor">
+				<div class="col pt-3 px-4">
+					<p>If you look closely, you can see that as the boat is falling, it's texture is shifting around and doesn't stay lined up with
+					the boat as it's moving.</p>
+				</div>
+			</div>
+			<div class="row bg-bodyColor text-bodyColor mt-2">
+				<div class="col pt-3 px-4">
+					<h2>Triplanar Mapping In Object Space</h2>
+					<hr class="rngTheme-color">
+					<p>So why is this happening? Well, by default the 3D set of coordinates that the triplanar node is using to figure out where to
+					sample textures is the pixel's world space coordinate. To make the textures remain aligned with object, you'll need to calculate
+					your triplanar node with your object space coordinates. Doing that is fairly easy: just hook up a position node and a normal node
+					that are both set to object space to your triplanar nodes.</p>
+				</div>
+			</div>
+			<div class="row text-bodyColor pb-3 align-items-end">
+				<div class="col-sm-4">
+					<p class="pt-3 px-2">Here it is hooked up to just one triplanar node.</p>
+					<div class="text-center">
+						<img class="img-fluid text-center" src="images/breakdowns/triplanar/img08.png" style="max-height: 350px"/>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<p class="pt-3 px-2">And here it is with all 3 nodes hooked up! It's a bit messy here, but it's just connecting the nodes to the position
+					and normal inputs of each of the triplanar nodes.</p>
+					<div class="text-center">
+						<img class="img-fluid" src="images/breakdowns/triplanar/img09.png" style="max-height: 350px"/>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<p class="pt-3 px-2">As you can see, now the texture stays aligned to the boat as it falls!</p>
+					<div class="text-center">
+						<img class="img-fluid" src="images/breakdowns/triplanar/objectSpace.gif" style="max-height: 350px"/>
+					</div>
+				</div>
+			</div>
+			<div class="row bg-bodyColor text-bodyColor pb-3">
+				<div class="col pt-3 px-4">
+					<h2>Final Remarks</h2>
+					<hr class="rngTheme-color">
+					<p>Triplanar mapping is super useful for making quick and easy assets, texturing environments, or just avoiding UV mapping at all costs.
+					This breakdown is pretty light and non-technical, but if you want to get into the weeds (particularly in regards to triplanar normal mapping),
+					<a href="https://medium.com/@bgolus/normal-mapping-for-a-triplanar-shader-10bf39dca05a" target="_blank" class="rngTheme-color">this is a great article</a>.
+					<br><br>
+					There are a few issues that can crop up with triplanar mapping that I want to mention:
+					<ul>
+					<li>Using normal maps in object space doesn't actually work. It looks okay, but if you look closely at the above gif you can see the lighting on the boat looks a little odd sometimes. This is just because Shadergraph's normal  triplanar implementation relies on some world space data that can't be accessed. There are resources out there on how to correctly implement this if you really want, but for prototyping or doing a game jam, this can be fine.</li>
+					<li>Even with using object space, you will still have issues if you use this technique on skinned mesh renderers (such as animated characters) or anywhere you have deforming meshes. In those cases you still need to use regular UV maps.</li>
+					<li>Any faces of your model that aren't aligned with the grid can look blurry, depending on the texture you're using. If you use textures that have a uniform look (like the wood texture I've used in this post), you should be fine.</li>
+					</ul>
+					
+					Further things to try out with this:
+					<ul>
+					<li>MinionsArt grass shader</li>
+					<li>Using UVs to make decals/trimsheets (Star Citizen)</li>
+					</ul></p>
+				</div>
+			</div>
+	    </div>
+		<br>
+		<hr class="rngTheme-color">
+		<div id="footer"></div>
+	</section>
+	</body>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-4.2.1.js"></script>
+	
+	<script src="js/consistent-elements.js"></script>
+	<script src="js/rng-theme.js"></script>
+</html>

@@ -121,6 +121,15 @@ body
 	height:auto;
 }
 
+/* https://stackoverflow.com/questions/28460844/html-bootstrap-how-to-crop-the-center-part-of-an-image */
+.portfolio-image
+{
+	object-fit: cover;
+	max-width: 100%;
+	width: 300px;
+	height: 300px;
+}
+
 .square-corners
 {
 	border-radius: 0;

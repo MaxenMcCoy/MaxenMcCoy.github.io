@@ -1,11 +1,16 @@
 New Portfolio Pieces:
 
+Things to mention in general: creating documentation!!
+
 Games (current setup)
-[y]Golorth Eats The World (Jam 1st) (PAX2020) (Note: perms are tricky and effort)
-[y]Gunball (PAX 2020)
-[ ]Neighboohood
-[ ]Space Pizza
-[ ]PEAK
+[ ]City by the Sea
+[ ]Gunball (PAX 2020)
+[ ]NeighBOOhood
+[ ]Pixel Pulse (show documentation and talk about importance of assisting design)
+
+Misc VFX (not projects - specific effects)
+
+VFX / Tech art
 
 Background themes:
 -Delugional
@@ -27,7 +32,7 @@ Vehicles/Pawn Control - [ ]Prototypes
 Computer/Scanning/Everything from prototypes - [ ]GameOnAPlanet
 
 Level Design
-[ ]GameOnAPlanet
+[ ]City by the Sea
 [ ]Delugeional (Jam 1st)
 [ ]PEAK
 [ ]Emerald Sanctum
@@ -39,3 +44,10 @@ THINGS THAT ARE TRICKY TO GET FOOTAGE OF:
 Neighboohood
 Untitled Multiplayer Project
 Golorth Eats the World
+
+=======================================
+
+Resume:
+Republique
+NeighBOOhood
+Super Parker Galaxy (eventually)

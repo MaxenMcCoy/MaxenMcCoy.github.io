@@ -1,0 +1,18 @@
+Title image
+
+Info at a glance bar
+> Role - project context
+> Demonstrated skills
+
+Links bar
+> itch.io
+> github
+
+Video
+> Youtube embed
+
+Longer project description
+> Game pitch
+> What I did on it
+
+3 images

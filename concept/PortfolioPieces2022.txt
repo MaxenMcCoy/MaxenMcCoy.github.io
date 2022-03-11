@@ -4,13 +4,13 @@ Definitely
 
 [x] City by the Sea
 
-[ ] Floors of Fright
+[x] Floors of Fright
 
-[ ] Appetent Synapse
+[x] Appetent Synapse
 
 [ ] Untitled Multiplayer Project
 
-[ ] Space Pizza
+[x] Space Pizza
 
 
 ~~~~~~~~~~~~~~~~~~~
